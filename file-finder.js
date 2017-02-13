@@ -53,7 +53,7 @@ stdin.addListener('data', function(d) {
 
     	for (var i = 0; i < matches.length; i++) {
  			console.log(path.resolve(cwd,'./' + matches[i]) + ' --> ' + destination + '/' + matches[i]);
-    		//fs.copySync(path.resolve(cwd,'./' + matches[i]), destination + '/' + matches[i]);
+    		fs.copySync(path.resolve(cwd,'./' + matches[i]), destination + '/' + matches[i]);
     	}
 
     	process.exit();
